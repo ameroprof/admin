@@ -1,0 +1,6 @@
+{
+  "name": "EduSmart UNRWA - لوحة الإدارة التربوية وتوليد خطط الأونروا",
+  "description": "منصة تعليمية وإدارية ذكية متخصصة لمدارس الأونروا: توليد خطط الدروس بالنموذج الرسمي المعتمد، الجداول المدرسية، سجل العلامات، راصد الحضور والغياب، الألعاب التعليمية التفاعلية وتصدير Word/Excel/PDF.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

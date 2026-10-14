@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    direction: rtl;
+    text-align: right;
+  }
+}
+
+/* Custom Print Optimization for Official UNRWA Documents */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  body {
+    background-color: white !important;
+    color: black !important;
+    font-size: 11pt !important;
+  }
+  .print-break-inside-avoid {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .print-page-break-after {
+    page-break-after: always;
+  }
+  @page {
+    size: A4 portrait;
+    margin: 10mm;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
